@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    tools:context=".edit_minuman"
+    android:background="@drawable/logo3">
+
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/txt_Editminuman"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Edit Menu Minuman"
+            android:textSize="24sp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="16dp"></TextView>
+
+        <EditText
+            android:id="@+id/edt_namaminuman"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txt_Editminuman"
+            android:layout_marginTop="16dp"
+            android:hint="Nama Minuman"
+            android:inputType="text"></EditText>
+
+        <EditText
+            android:id="@+id/edt_hargaminuman"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/edt_namaminuman"
+            android:layout_marginTop="8dp"
+            android:hint="Harga Minuman"
+            android:inputType="numberDecimal"></EditText>
+
+        <Button
+            android:id="@+id/btn_simpan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/edt_hargaminuman"
+            android:layout_marginTop="16dp"
+            android:text="Simpan"
+            android:backgroundTint="#163020"></Button>
+
+    </RelativeLayout>
+
+</LinearLayout>
